@@ -25,7 +25,7 @@ io.on('connection', function (socket) {
 
 // Sent validator as required by Meraki
 app.get('*', function (req, res) {
-    res.status(200).send(config.validator);
+    res.status(200).send(config.getResponseText);
 });
 
 // Receive notifications
